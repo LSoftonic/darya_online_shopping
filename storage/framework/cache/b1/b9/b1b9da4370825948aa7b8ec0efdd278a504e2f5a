@@ -1,0 +1,86 @@
+1592878761a:1:{s:11:"product.htm";a:13:{s:8:"fileName";s:11:"product.htm";s:7:"content";s:1379:"title = "Product"
+url = "/product/:slug/:variant?"
+layout = "default"
+is_hidden = 0
+
+[viewBag]
+localeUrl[en] = "/product/:slug/:variant?"
+
+[product]
+product = ":slug"
+variant = ":slug"
+
+[products relatedProducts]
+setPageTitle = 0
+includeVariants = 1
+includeChildren = 0
+perPage = 4
+paginate = 0
+sort = "random"
+[wishlistButton]
+==
+use OFFLINE\Mall\Models\Category;
+
+function onStart() {
+    // Fetch the category from the product component.
+    $productComponent = $this->findComponentByName('product');
+    $item = optional($productComponent)->item;
+    if (!$item) {
+        return;
+    }
+    $category = optional($item->categories)->first();
+    if (!$category) {
+        return;
+    }
+    // If a category is available, use it for the products component.
+    $this->findComponentByName('relatedProducts')->category = $category;
+}
+==
+
+{% component 'product' %}
+<h2>Other products from this category</h2>
+{% component 'relatedProducts' %}
+{% put styles %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.2/jquery.fancybox.min.css">
+{% endput %}
+{% put scripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.2/jquery.fancybox.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-fancybox="product"]').fancybox({
+                loop: true
+            });
+        })
+    </script>
+{% endput %}
+";s:5:"mtime";i:1592851073;s:6:"markup";s:540:"{% component 'product' %}
+<h2>Other products from this category</h2>
+{% component 'relatedProducts' %}
+{% put styles %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.2/jquery.fancybox.min.css">
+{% endput %}
+{% put scripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.2/jquery.fancybox.min.js"></script>
+    <script>
+        $(function () {
+            $('[data-fancybox="product"]').fancybox({
+                loop: true
+            });
+        })
+    </script>
+{% endput %}";s:4:"code";s:502:"use OFFLINE\Mall\Models\Category;
+
+function onStart() {
+    // Fetch the category from the product component.
+    $productComponent = $this->findComponentByName('product');
+    $item = optional($productComponent)->item;
+    if (!$item) {
+        return;
+    }
+    $category = optional($item->categories)->first();
+    if (!$category) {
+        return;
+    }
+    // If a category is available, use it for the products component.
+    $this->findComponentByName('relatedProducts')->category = $category;
+}";s:5:"title";s:7:"Product";s:3:"url";s:24:"/product/:slug/:variant?";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:1:{s:9:"localeUrl";a:1:{s:2:"en";s:24:"/product/:slug/:variant?";}}s:7:"product";a:2:{s:7:"product";s:5:":slug";s:7:"variant";s:5:":slug";}s:24:"products relatedProducts";a:6:{s:12:"setPageTitle";s:1:"0";s:15:"includeVariants";s:1:"1";s:15:"includeChildren";s:1:"0";s:7:"perPage";s:1:"4";s:8:"paginate";s:1:"0";s:4:"sort";s:6:"random";}s:14:"wishlistButton";a:0:{}}}

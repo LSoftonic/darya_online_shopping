@@ -1,0 +1,13 @@
+1592884467a:1:{s:14:"navigation.htm";a:6:{s:8:"fileName";s:14:"navigation.htm";s:7:"content";s:176:"[staticMenu]
+code = "main"
+==
+<nav class="border-solid border-b border-smoke-light">
+    <div class="container mx-auto">
+        {% component 'staticMenu' %}
+    </div>
+</nav>
+";s:5:"mtime";i:1592851073;s:6:"markup";s:145:"<nav class="border-solid border-b border-smoke-light">
+    <div class="container mx-auto">
+        {% component 'staticMenu' %}
+    </div>
+</nav>";s:4:"code";N;s:10:"staticMenu";a:1:{s:4:"code";s:4:"main";}}}
