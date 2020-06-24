@@ -34,7 +34,7 @@ class __TwigTemplate_19842b37c0818da3442000b16a68aa4adbee5ecc2bfe09b645bd29e98ee
     {
         $macros = $this->macros;
         // line 1
-        echo "<h1>Welcome to the OFFLINE Mall</h1>
+        echo "<h1>Welcome to the DARYA Mall</h1>
 <p>Feel free to look around...</p>";
     }
 
@@ -50,7 +50,7 @@ class __TwigTemplate_19842b37c0818da3442000b16a68aa4adbee5ecc2bfe09b645bd29e98ee
 
     public function getSourceContext()
     {
-        return new Source("<h1>Welcome to the OFFLINE Mall</h1>
+        return new Source("<h1>Welcome to the DARYA Mall</h1>
 <p>Feel free to look around...</p>", "C:\\xampp\\htdocs\\darya_online_shopping/themes/offline-oc-mall-theme/pages/index.htm", "");
     }
 }

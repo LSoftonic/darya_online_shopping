@@ -1,4 +1,4 @@
-1592884465a:1:{s:9:"index.htm";a:10:{s:8:"fileName";s:9:"index.htm";s:7:"content";s:167:"title = "Homepage"
+1592976067a:1:{s:9:"index.htm";a:10:{s:8:"fileName";s:9:"index.htm";s:7:"content";s:174:"title = "Homepage"
 url = "/"
 layout = "default"
 is_hidden = 0
@@ -6,6 +6,6 @@ is_hidden = 0
 [viewBag]
 localeUrl[en] = "/"
 ==
-<h1>Welcome to the OFFLINE Mall</h1>
-<p>Feel free to look around...</p>";s:5:"mtime";i:1592851073;s:6:"markup";s:71:"<h1>Welcome to the OFFLINE Mall</h1>
+<h1>Welcome to the DARYA Mall</h1>
+<p>Feel free to look around...</p>";s:5:"mtime";i:1592885164;s:6:"markup";s:70:"<h1>Welcome to the DARYA Mall</h1>
 <p>Feel free to look around...</p>";s:4:"code";N;s:5:"title";s:8:"Homepage";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:1:{s:9:"localeUrl";a:1:{s:2:"en";s:1:"/";}}}}

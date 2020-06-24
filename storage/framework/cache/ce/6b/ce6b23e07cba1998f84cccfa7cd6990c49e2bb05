@@ -1,0 +1,11 @@
+1592976072a:1:{s:10:"footer.htm";a:6:{s:8:"fileName";s:10:"footer.htm";s:7:"content";s:460:"[viewBag]
+==
+<footer class="footer text-sm text-grey-dark py-8 border-solid border-t border-smoke-light">
+    <div class="container mx-auto text-center text-xs text-grey">
+  <!--       This is a demo store using the <a href="https://github.com/OFFLINE-GmbH/oc-mall-plugin" target="_blank" rel="nofollow noopener">OFFLINE.Mall</a> plugin for <a href="http://octobercms.com" target="_blank" rel="nofollow noopener">October CMS</a>. -->
+    </div>
+</footer>";s:5:"mtime";i:1592884945;s:6:"markup";s:445:"<footer class="footer text-sm text-grey-dark py-8 border-solid border-t border-smoke-light">
+    <div class="container mx-auto text-center text-xs text-grey">
+  <!--       This is a demo store using the <a href="https://github.com/OFFLINE-GmbH/oc-mall-plugin" target="_blank" rel="nofollow noopener">OFFLINE.Mall</a> plugin for <a href="http://octobercms.com" target="_blank" rel="nofollow noopener">October CMS</a>. -->
+    </div>
+</footer>";s:4:"code";N;s:7:"viewBag";a:0:{}}}

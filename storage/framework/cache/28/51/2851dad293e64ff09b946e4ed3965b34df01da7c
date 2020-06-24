@@ -1,4 +1,4 @@
-1592884465a:1:{s:11:"product.htm";a:13:{s:8:"fileName";s:11:"product.htm";s:7:"content";s:1379:"title = "Product"
+1592976067a:1:{s:11:"product.htm";a:13:{s:8:"fileName";s:11:"product.htm";s:7:"content";s:1379:"title = "Product"
 url = "/product/:slug/:variant?"
 layout = "default"
 is_hidden = 0
