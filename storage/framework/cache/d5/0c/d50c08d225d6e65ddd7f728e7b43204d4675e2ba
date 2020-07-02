@@ -1,0 +1,80 @@
+1593604943a:1:{s:19:"home/electronic.htm";a:6:{s:8:"fileName";s:19:"home/electronic.htm";s:7:"content";s:1476:"[viewBag]
+==
+use Offline\Mall\Models\Category;
+function onStart(){
+$this['electronic']=Category::where("code","electronics")->first();
+}
+==
+
+<section class="padding-bottom">
+    <header class="section-heading heading-line">
+        <h4 class="title-section text-uppercase">{{electronic.name}}</h4>
+    </header>
+    
+    <div class="card card-home-category">
+    <div class="row no-gutters">
+        <div class="col-md-3">
+        
+        <div class="home-category-banner bg-light-orange">
+            <h5 class="title">{{electronic.description_short}}</h5>
+            <p>{{electronic.description|raw}}</p>
+            <a href="#" class="btn btn-outline-primary rounded-pill">Source now</a>
+            <img src="{{electronic.image.path}}" class="img-bg">
+        </div>
+    
+        </div> <!-- col.// -->
+        <div class="col-md-9">
+    <ul class="row no-gutters bordered-cols">
+        {% for subElec in electronic.children %}
+     <li class="col-6 col-lg-3 col-md-4">
+    <a href="#" class="item"> 
+        <div class="card-body">
+            <h6 class="title">{{subElec.name}} </h6>
+            <img class="img-sm float-right" src="{{subElec.image.path}}"> 
+            <p class="text-muted"><i class="fa fa-map-marker-alt"></i>{{subElec.description_short}}</p>
+        </div>
+    </a>
+        </li>
+ {% endfor %}
+    </ul>
+        </div> <!-- col.// -->
+    </div> <!-- row.// -->
+    </div> <!-- card.// -->
+    </section>";s:5:"mtime";i:1593544646;s:6:"markup";s:1327:"<section class="padding-bottom">
+    <header class="section-heading heading-line">
+        <h4 class="title-section text-uppercase">{{electronic.name}}</h4>
+    </header>
+    
+    <div class="card card-home-category">
+    <div class="row no-gutters">
+        <div class="col-md-3">
+        
+        <div class="home-category-banner bg-light-orange">
+            <h5 class="title">{{electronic.description_short}}</h5>
+            <p>{{electronic.description|raw}}</p>
+            <a href="#" class="btn btn-outline-primary rounded-pill">Source now</a>
+            <img src="{{electronic.image.path}}" class="img-bg">
+        </div>
+    
+        </div> <!-- col.// -->
+        <div class="col-md-9">
+    <ul class="row no-gutters bordered-cols">
+        {% for subElec in electronic.children %}
+     <li class="col-6 col-lg-3 col-md-4">
+    <a href="#" class="item"> 
+        <div class="card-body">
+            <h6 class="title">{{subElec.name}} </h6>
+            <img class="img-sm float-right" src="{{subElec.image.path}}"> 
+            <p class="text-muted"><i class="fa fa-map-marker-alt"></i>{{subElec.description_short}}</p>
+        </div>
+    </a>
+        </li>
+ {% endfor %}
+    </ul>
+        </div> <!-- col.// -->
+    </div> <!-- row.// -->
+    </div> <!-- card.// -->
+    </section>";s:4:"code";s:126:"use Offline\Mall\Models\Category;
+function onStart(){
+$this['electronic']=Category::where("code","electronics")->first();
+}";s:7:"viewBag";a:0:{}}}

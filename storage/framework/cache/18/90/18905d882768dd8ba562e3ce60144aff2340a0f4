@@ -1,0 +1,37 @@
+1593604944a:1:{s:12:"wishlist.htm";a:6:{s:8:"fileName";s:12:"wishlist.htm";s:7:"content";s:635:"[wishlists]
+==
+<div class="widget-header mr-3">
+    <a  href="{{ 'wishlists' | page }}" class="widget-view">
+        <div class="icon-area">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="notify">  {{ count }}</span>
+        </div>
+        <small class="text">{{ 'offline.mall::frontend.wishlists' | trans }}</small>
+    </a>
+</div>
+{% put scripts %}
+    <script>
+        $(function () {
+            $.subscribe('mall.wishlist.productAdded', function () {
+                $('.mall-wishlist-icon').css('color', 'hsl(1.7, 76.3%, 53.7%)')
+            });
+        });
+    </script>
+{% endput %}";s:5:"mtime";i:1593190803;s:6:"markup";s:618:"<div class="widget-header mr-3">
+    <a  href="{{ 'wishlists' | page }}" class="widget-view">
+        <div class="icon-area">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="notify">  {{ count }}</span>
+        </div>
+        <small class="text">{{ 'offline.mall::frontend.wishlists' | trans }}</small>
+    </a>
+</div>
+{% put scripts %}
+    <script>
+        $(function () {
+            $.subscribe('mall.wishlist.productAdded', function () {
+                $('.mall-wishlist-icon').css('color', 'hsl(1.7, 76.3%, 53.7%)')
+            });
+        });
+    </script>
+{% endput %}";s:4:"code";N;s:9:"wishlists";a:0:{}}}

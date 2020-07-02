@@ -1,0 +1,19 @@
+[viewBag]
+==
+use Offline\Mall\Models\Brand;
+function onStart(){
+$this['brands']=Brand::all();
+}
+==
+<section  class="padding-bottom">
+    
+    <header class="section-heading heading-line">
+        <h4 class="title-section text-uppercase">Choose brand</h4>
+    </header>
+    
+    <ul class="row mt-4">
+        {% for brand in brands %}
+        <li class="col-md col-6"><a href="#" class="icontext"> <img class="icon-flag-sm" src="{{brand.logo.path}}"> <span>{{brand.name}}</span> </a></li>
+       {% endfor %}
+    </ul>
+    </section>

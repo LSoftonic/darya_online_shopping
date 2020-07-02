@@ -1,0 +1,20 @@
+[wishlists]
+==
+<div class="widget-header mr-3">
+    <a  href="{{ 'wishlists' | page }}" class="widget-view">
+        <div class="icon-area">
+            <i class="fa fa-shopping-cart"></i>
+            <span class="notify">  {{ count }}</span>
+        </div>
+        <small class="text">{{ 'offline.mall::frontend.wishlists' | trans }}</small>
+    </a>
+</div>
+{% put scripts %}
+    <script>
+        $(function () {
+            $.subscribe('mall.wishlist.productAdded', function () {
+                $('.mall-wishlist-icon').css('color', 'hsl(1.7, 76.3%, 53.7%)')
+            });
+        });
+    </script>
+{% endput %}

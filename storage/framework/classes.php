@@ -300,4 +300,11 @@
   'RainLab\\Builder\\Models\\Settings' => 'plugins\\rainlab\\builder\\models\\Settings.php',
   'RainLab\\Builder\\Components\\RecordList' => 'plugins\\rainlab\\builder\\components\\RecordList.php',
   'RainLab\\Builder\\Components\\RecordDetails' => 'plugins\\rainlab\\builder\\components\\RecordDetails.php',
+  'offline\\mall\\Controllers\\currencies' => 'plugins\\offline\\mall\\controllers\\currencies.php',
+  'Offline\\Mall\\Models\\Category' => 'plugins\\offline\\mall\\models\\Category.php',
+  'offline\\mall\\Controllers\\discounts' => 'plugins\\offline\\mall\\controllers\\discounts.php',
+  'offline\\mall\\Controllers\\paymentlogs' => 'plugins\\offline\\mall\\controllers\\paymentlogs.php',
+  'OFFLINE\\Mall\\Models\\PaymentLog' => 'plugins\\offline\\mall\\models\\PaymentLog.php',
+  'offline\\mall\\Controllers\\orderstate' => 'plugins\\offline\\mall\\controllers\\orderstate.php',
+  'offline\\mall\\Controllers\\categoriesproducts' => 'plugins\\offline\\mall\\controllers\\categoriesproducts.php',
 );

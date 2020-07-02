@@ -1,0 +1,10 @@
+1593514776a:1:{s:28:"searchresults/pagination.htm";a:5:{s:8:"fileName";s:28:"searchresults/pagination.htm";s:7:"content";s:111:"{% if results.hasPages %}
+    <div class="mall-pagination">
+        {{ results | raw }}
+    </div>
+{% endif %}
+";s:5:"mtime";i:1592851074;s:6:"markup";s:110:"{% if results.hasPages %}
+    <div class="mall-pagination">
+        {{ results | raw }}
+    </div>
+{% endif %}";s:4:"code";N;}}

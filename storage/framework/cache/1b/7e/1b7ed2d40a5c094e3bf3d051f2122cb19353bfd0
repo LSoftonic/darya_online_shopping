@@ -1,0 +1,19 @@
+1593514776a:1:{s:30:"searchresults/searchresult.htm";a:5:{s:8:"fileName";s:30:"searchresults/searchresult.htm";s:7:"content";s:345:"<div class="flex mb-8 pb-8 border-b border-smoke-light">
+    {% if result.thumb %}
+        <div class="w-1/6">
+            {% partial __SELF__ ~ '::thumbnail' result = result %}
+        </div>
+    {% endif %}
+    <div class="{{ result.thumb ? 'w-5/6' : 'w-full' }}">
+        {% partial __SELF__ ~ '::content' result = result %}
+    </div>
+</div>";s:5:"mtime";i:1592851074;s:6:"markup";s:345:"<div class="flex mb-8 pb-8 border-b border-smoke-light">
+    {% if result.thumb %}
+        <div class="w-1/6">
+            {% partial __SELF__ ~ '::thumbnail' result = result %}
+        </div>
+    {% endif %}
+    <div class="{{ result.thumb ? 'w-5/6' : 'w-full' }}">
+        {% partial __SELF__ ~ '::content' result = result %}
+    </div>
+</div>";s:4:"code";N;}}

@@ -47,14 +47,30 @@ class __TwigTemplate_7ff2d5a07b01c90740a88af1fae170461b0727a6de921b9ba487aec6dbe
                     </a> <!-- brand-wrap.// -->
                 </div>
                 <div class=\"col-xl-6 col-lg-5 col-md-6\">
-                    <form action=\"#\" class=\"search-header\">
+                    <form class=\"search-header\"  action=\"";
+        // line 11
+        echo $this->extensions['Cms\Twig\Extension']->pageFilter("search");
+        echo "\" method=\"get\">
                         <div class=\"input-group w-100\">
                             <select class=\"custom-select border-right\"  name=\"category_name\">
                                     <option value=\"\">All type</option><option value=\"codex\">Special</option>
                                     <option value=\"comments\">Only best</option>
                                     <option value=\"content\">Latest</option>
                             </select>
-                            <input type=\"text\" class=\"form-control\" placeholder=\"Search\">
+                            <input 
+                            name=\"q\"
+                           type=\"text\"
+                           value=\"";
+        // line 21
+        echo twig_escape_filter($this->env, ($context["query"] ?? null), "html", null, true);
+        echo "\"
+                           class=\"form-control\"
+                           placeholder=\"";
+        // line 23
+        echo call_user_func_array($this->env->getFilter('trans')->getCallable(), ["offline.mall::frontend.search"]);
+        echo "\"
+                           autocomplete=\"off\"
+                           >
                             
                             <div class=\"input-group-append\">
                               <button class=\"btn btn-primary\" type=\"submit\">
@@ -66,41 +82,23 @@ class __TwigTemplate_7ff2d5a07b01c90740a88af1fae170461b0727a6de921b9ba487aec6dbe
                 </div> <!-- col.// -->
                 <div class=\"col-xl-4 col-lg-4 col-md-6\">
                     <div class=\"widgets-wrap float-md-right\">
-                        <div class=\"widget-header mr-3\">
-                            <a href=\"#\" class=\"widget-view\">
-                                <div class=\"icon-area\">
-                                    <i class=\"fa fa-user\"></i>
-                                    <span class=\"notify\">3</span>
-                                </div>
-                                <small class=\"text\"> My profile </small>
-                            </a>
-                        </div>
-                        <div class=\"widget-header mr-3\">
-                            <a href=\"#\" class=\"widget-view\">
-                                <div class=\"icon-area\">
-                                    <i class=\"fa fa-comment-dots\"></i>
-                                    <span class=\"notify\">1</span>
-                                </div>
-                                <small class=\"text\"> Message </small>
-                            </a>
-                        </div>
-                        <div class=\"widget-header mr-3\">
-                            <a href=\"#\" class=\"widget-view\">
-                                <div class=\"icon-area\">
-                                    <i class=\"fa fa-store\"></i>
-                                </div>
-                                <small class=\"text\"> Orders </small>
-                            </a>
-                        </div>
-                        <div class=\"widget-header\">
-                            <a href=\"#\" class=\"widget-view\">
-                                <div class=\"icon-area\">
-                                    <i class=\"fa fa-shopping-cart\"></i>
-                                </div>
-                                <small class=\"text\"> Cart </small>
-                            </a>
-                        </div>
-                    </div> <!-- widgets-wrap.// -->
+                      ";
+        // line 37
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("accountButton/default"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 38
+        echo "                      ";
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("cartButton/default"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 39
+        echo "                      ";
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("wishlist"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 40
+        echo "                    </div> <!-- widgets-wrap.// -->
                 </div> <!-- col.// -->
             </div> <!-- row.// -->
         </div> <!-- container.// -->
@@ -115,59 +113,54 @@ class __TwigTemplate_7ff2d5a07b01c90740a88af1fae170461b0727a6de921b9ba487aec6dbe
         </button>
     
         <div class=\"collapse navbar-collapse\" id=\"main_nav\">
-          <ul class=\"navbar-nav\">
+      ";
+        // line 55
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction("navigation"        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 56
+        echo "          <ul class=\"navbar-nav ml-md-auto\">
               <li class=\"nav-item dropdown\">
-              <a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> <i class=\"fa fa-bars text-muted mr-2\"></i> Categories </a>
-              <div class=\"dropdown-menu\">
-                <a class=\"dropdown-item\" href=\"#\">Machinery</a>
-                <a class=\"dropdown-item\" href=\"#\">Electronics</a>
-                <a class=\"dropdown-item\" href=\"#\">Home textile</a>
-                <a class=\"dropdown-item\" href=\"#\">Home and kitchen</a>
-                <a class=\"dropdown-item\" href=\"#\">Service and equipment</a>
-                <a class=\"dropdown-item\" href=\"#\">Healthcare items</a>
-                <a class=\"dropdown-item\" href=\"#\">Toys and Hobbies</a>
-              </div>
-            </li>
-              <li class=\"nav-item\">
-               <a class=\"nav-link\" href=\"#\">Ready to ship</a>
-            </li>
-            <li class=\"nav-item\">
-              <a class=\"nav-link\" href=\"#\">Trade shows</a>
-            </li>
-            <li class=\"nav-item\">
-              <a class=\"nav-link\" href=\"#\">Services</a>
-            </li>
-            <li class=\"nav-item\">
-              <a class=\"nav-link\" href=\"#\">Sell with us</a>
-            </li>
-            <li class=\"nav-item dropdown\">
-              <a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">Demo pages</a>
-              <div class=\"dropdown-menu\">
-                <a class=\"dropdown-item\" href=\"page-index.html\">Main</a>
-                <a class=\"dropdown-item\" href=\"page-category.html\">All category</a>
-                <a class=\"dropdown-item\" href=\"page-listing-large.html\">Listing list</a>
-                <a class=\"dropdown-item\" href=\"page-listing-grid.html\">Listing grid</a>
-                <a class=\"dropdown-item\" href=\"page-shopping-cart.html\">Shopping cart</a>
-                <a class=\"dropdown-item\" href=\"page-detail-product.html\">Item detail</a>
-                <a class=\"dropdown-item\" href=\"page-content.html\">Info content</a>
-                <a class=\"dropdown-item\" href=\"page-user-login.html\">Page login</a>
-                <a class=\"dropdown-item\" href=\"page-user-register.html\">Page register</a>
-                <a class=\"dropdown-item disabled text-muted\" href=\"#\">More components</a>
-              </div>
-            </li>
-          </ul>
-          <ul class=\"navbar-nav ml-md-auto\">
-                <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"#\">Get the app</a>
+                        
+                <div class=\"nav-link\">
+                  ";
+        // line 60
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('Cms\Twig\Extension')->partialFunction((($context["currencyPicker"] ?? null) . "::selector")        , $context['__cms_partial_params']        , true        );
+        unset($context['__cms_partial_params']);
+        // line 61
+        echo "              </div>
               </li>
               <li class=\"nav-item dropdown\">
-                <a class=\"nav-link dropdown-toggle\" href=\"http://example.com/\" data-toggle=\"dropdown\">English</a>
-                <div class=\"dropdown-menu dropdown-menu-right\">
-                  <a class=\"dropdown-item\" href=\"#\">Russian</a>
-                  <a class=\"dropdown-item\" href=\"#\">French</a>
-                  <a class=\"dropdown-item\" href=\"#\">Spanish</a>
-                  <a class=\"dropdown-item\" href=\"#\">Chinese</a>
-                </div>
+           ";
+        // line 64
+        echo call_user_func_array($this->env->getFunction('form_open')->getCallable(), ["open"]);
+        echo "
+           <select style=\"border:none\" name=\"locale\" data-request=\"onSwitchLocale\" class=\"nav-link dropdown-toggle\">
+               ";
+        // line 66
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable(($context["locales"] ?? null));
+        foreach ($context['_seq'] as $context["code"] => $context["name"]) {
+            // line 67
+            echo "                   <option class=\"dropdown-item\" value=\"";
+            echo twig_escape_filter($this->env, $context["code"], "html", null, true);
+            echo "\" ";
+            echo ((($context["code"] == ($context["activeLocale"] ?? null))) ? ("selected") : (""));
+            echo ">";
+            echo twig_escape_filter($this->env, $context["name"], "html", null, true);
+            echo "</option>
+               ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['code'], $context['name'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 69
+        echo "           </select>
+       ";
+        // line 70
+        echo call_user_func_array($this->env->getFunction('form_close')->getCallable(), ["close"]);
+        echo "
               </li>
            </ul>
         </div> <!-- collapse .// -->
@@ -188,7 +181,7 @@ class __TwigTemplate_7ff2d5a07b01c90740a88af1fae170461b0727a6de921b9ba487aec6dbe
 
     public function getDebugInfo()
     {
-        return array (  45 => 7,  37 => 1,);
+        return array (  162 => 70,  159 => 69,  146 => 67,  142 => 66,  137 => 64,  132 => 61,  128 => 60,  122 => 56,  118 => 55,  101 => 40,  96 => 39,  91 => 38,  87 => 37,  70 => 23,  65 => 21,  52 => 11,  45 => 7,  37 => 1,);
     }
 
     public function getSourceContext()
@@ -203,14 +196,21 @@ class __TwigTemplate_7ff2d5a07b01c90740a88af1fae170461b0727a6de921b9ba487aec6dbe
                     </a> <!-- brand-wrap.// -->
                 </div>
                 <div class=\"col-xl-6 col-lg-5 col-md-6\">
-                    <form action=\"#\" class=\"search-header\">
+                    <form class=\"search-header\"  action=\"{{ 'search' | page }}\" method=\"get\">
                         <div class=\"input-group w-100\">
                             <select class=\"custom-select border-right\"  name=\"category_name\">
                                     <option value=\"\">All type</option><option value=\"codex\">Special</option>
                                     <option value=\"comments\">Only best</option>
                                     <option value=\"content\">Latest</option>
                             </select>
-                            <input type=\"text\" class=\"form-control\" placeholder=\"Search\">
+                            <input 
+                            name=\"q\"
+                           type=\"text\"
+                           value=\"{{ query }}\"
+                           class=\"form-control\"
+                           placeholder=\"{{ 'offline.mall::frontend.search' | trans }}\"
+                           autocomplete=\"off\"
+                           >
                             
                             <div class=\"input-group-append\">
                               <button class=\"btn btn-primary\" type=\"submit\">
@@ -222,40 +222,9 @@ class __TwigTemplate_7ff2d5a07b01c90740a88af1fae170461b0727a6de921b9ba487aec6dbe
                 </div> <!-- col.// -->
                 <div class=\"col-xl-4 col-lg-4 col-md-6\">
                     <div class=\"widgets-wrap float-md-right\">
-                        <div class=\"widget-header mr-3\">
-                            <a href=\"#\" class=\"widget-view\">
-                                <div class=\"icon-area\">
-                                    <i class=\"fa fa-user\"></i>
-                                    <span class=\"notify\">3</span>
-                                </div>
-                                <small class=\"text\"> My profile </small>
-                            </a>
-                        </div>
-                        <div class=\"widget-header mr-3\">
-                            <a href=\"#\" class=\"widget-view\">
-                                <div class=\"icon-area\">
-                                    <i class=\"fa fa-comment-dots\"></i>
-                                    <span class=\"notify\">1</span>
-                                </div>
-                                <small class=\"text\"> Message </small>
-                            </a>
-                        </div>
-                        <div class=\"widget-header mr-3\">
-                            <a href=\"#\" class=\"widget-view\">
-                                <div class=\"icon-area\">
-                                    <i class=\"fa fa-store\"></i>
-                                </div>
-                                <small class=\"text\"> Orders </small>
-                            </a>
-                        </div>
-                        <div class=\"widget-header\">
-                            <a href=\"#\" class=\"widget-view\">
-                                <div class=\"icon-area\">
-                                    <i class=\"fa fa-shopping-cart\"></i>
-                                </div>
-                                <small class=\"text\"> Cart </small>
-                            </a>
-                        </div>
+                      {% partial 'accountButton/default' %}
+                      {% partial 'cartButton/default' %}
+                      {% partial 'wishlist' %}
                     </div> <!-- widgets-wrap.// -->
                 </div> <!-- col.// -->
             </div> <!-- row.// -->
@@ -271,59 +240,22 @@ class __TwigTemplate_7ff2d5a07b01c90740a88af1fae170461b0727a6de921b9ba487aec6dbe
         </button>
     
         <div class=\"collapse navbar-collapse\" id=\"main_nav\">
-          <ul class=\"navbar-nav\">
-              <li class=\"nav-item dropdown\">
-              <a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"> <i class=\"fa fa-bars text-muted mr-2\"></i> Categories </a>
-              <div class=\"dropdown-menu\">
-                <a class=\"dropdown-item\" href=\"#\">Machinery</a>
-                <a class=\"dropdown-item\" href=\"#\">Electronics</a>
-                <a class=\"dropdown-item\" href=\"#\">Home textile</a>
-                <a class=\"dropdown-item\" href=\"#\">Home and kitchen</a>
-                <a class=\"dropdown-item\" href=\"#\">Service and equipment</a>
-                <a class=\"dropdown-item\" href=\"#\">Healthcare items</a>
-                <a class=\"dropdown-item\" href=\"#\">Toys and Hobbies</a>
-              </div>
-            </li>
-              <li class=\"nav-item\">
-               <a class=\"nav-link\" href=\"#\">Ready to ship</a>
-            </li>
-            <li class=\"nav-item\">
-              <a class=\"nav-link\" href=\"#\">Trade shows</a>
-            </li>
-            <li class=\"nav-item\">
-              <a class=\"nav-link\" href=\"#\">Services</a>
-            </li>
-            <li class=\"nav-item\">
-              <a class=\"nav-link\" href=\"#\">Sell with us</a>
-            </li>
-            <li class=\"nav-item dropdown\">
-              <a class=\"nav-link dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">Demo pages</a>
-              <div class=\"dropdown-menu\">
-                <a class=\"dropdown-item\" href=\"page-index.html\">Main</a>
-                <a class=\"dropdown-item\" href=\"page-category.html\">All category</a>
-                <a class=\"dropdown-item\" href=\"page-listing-large.html\">Listing list</a>
-                <a class=\"dropdown-item\" href=\"page-listing-grid.html\">Listing grid</a>
-                <a class=\"dropdown-item\" href=\"page-shopping-cart.html\">Shopping cart</a>
-                <a class=\"dropdown-item\" href=\"page-detail-product.html\">Item detail</a>
-                <a class=\"dropdown-item\" href=\"page-content.html\">Info content</a>
-                <a class=\"dropdown-item\" href=\"page-user-login.html\">Page login</a>
-                <a class=\"dropdown-item\" href=\"page-user-register.html\">Page register</a>
-                <a class=\"dropdown-item disabled text-muted\" href=\"#\">More components</a>
-              </div>
-            </li>
-          </ul>
+      {% partial 'navigation' %}
           <ul class=\"navbar-nav ml-md-auto\">
-                <li class=\"nav-item\">
-                <a class=\"nav-link\" href=\"#\">Get the app</a>
+              <li class=\"nav-item dropdown\">
+                        
+                <div class=\"nav-link\">
+                  {% partial currencyPicker ~ '::selector' %}
+              </div>
               </li>
               <li class=\"nav-item dropdown\">
-                <a class=\"nav-link dropdown-toggle\" href=\"http://example.com/\" data-toggle=\"dropdown\">English</a>
-                <div class=\"dropdown-menu dropdown-menu-right\">
-                  <a class=\"dropdown-item\" href=\"#\">Russian</a>
-                  <a class=\"dropdown-item\" href=\"#\">French</a>
-                  <a class=\"dropdown-item\" href=\"#\">Spanish</a>
-                  <a class=\"dropdown-item\" href=\"#\">Chinese</a>
-                </div>
+           {{ form_open() }}
+           <select style=\"border:none\" name=\"locale\" data-request=\"onSwitchLocale\" class=\"nav-link dropdown-toggle\">
+               {% for code, name in locales %}
+                   <option class=\"dropdown-item\" value=\"{{ code }}\" {{ code == activeLocale ? 'selected' }}>{{ name }}</option>
+               {% endfor %}
+           </select>
+       {{ form_close() }}
               </li>
            </ul>
         </div> <!-- collapse .// -->

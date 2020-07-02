@@ -1,0 +1,27 @@
+1593604944a:1:{s:12:"topmenu.yaml";a:7:{s:8:"fileName";s:12:"topmenu.yaml";s:7:"content";s:538:"items:
+    -
+        title: Categories
+        nesting: ''
+        type: all-mall-categories
+        url: ''
+        code: ''
+        reference: ''
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: about-us
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: about-us
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: TopMenu
+";s:5:"mtime";i:1593415766;s:6:"markup";N;s:4:"code";N;s:4:"name";N;s:5:"items";a:0:{}}}

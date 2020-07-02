@@ -1,0 +1,41 @@
+1593538230a:1:{s:19:"side_categories.htm";a:6:{s:8:"fileName";s:19:"side_categories.htm";s:7:"content";s:844:"[viewBag]
+==
+<h6>MY MARKETS</h6>
+<nav class="nav-home-aside">
+    <ul class="menu-category">
+        <li><a href="#">Fashion and clothes</a></li>
+        <li><a href="#">Automobile and motors</a></li>
+        <li><a href="#">Gardening and agriculture</a></li>
+        <li><a href="#">Electronics and tech</a></li>
+        <li><a href="#">Packaginf and printing</a></li>
+        <li><a href="#">Home and kitchen</a></li>
+        <li><a href="#">Digital goods</a></li>
+        <li class="has-submenu"><a href="#">More items</a>
+            <ul class="submenu">
+                <li><a href="#">Submenu name</a></li>
+                <li><a href="#">Great submenu</a></li>
+                <li><a href="#">Another menu</a></li>
+                <li><a href="#">Some others</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>";s:5:"mtime";i:1593195536;s:6:"markup";s:829:"<h6>MY MARKETS</h6>
+<nav class="nav-home-aside">
+    <ul class="menu-category">
+        <li><a href="#">Fashion and clothes</a></li>
+        <li><a href="#">Automobile and motors</a></li>
+        <li><a href="#">Gardening and agriculture</a></li>
+        <li><a href="#">Electronics and tech</a></li>
+        <li><a href="#">Packaginf and printing</a></li>
+        <li><a href="#">Home and kitchen</a></li>
+        <li><a href="#">Digital goods</a></li>
+        <li class="has-submenu"><a href="#">More items</a>
+            <ul class="submenu">
+                <li><a href="#">Submenu name</a></li>
+                <li><a href="#">Great submenu</a></li>
+                <li><a href="#">Another menu</a></li>
+                <li><a href="#">Some others</a></li>
+            </ul>
+        </li>
+    </ul>
+</nav>";s:4:"code";N;s:7:"viewBag";a:0:{}}}

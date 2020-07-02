@@ -1,4 +1,4 @@
-1592976068a:1:{s:11:"session.htm";a:5:{s:8:"fileName";s:11:"session.htm";s:7:"content";s:557:"{% if user %}
+1593542008a:1:{s:11:"session.htm";a:5:{s:8:"fileName";s:11:"session.htm";s:7:"content";s:557:"{% if user %}
     {{ 'offline.mall::frontend.session.logged_in' | trans({email: user.email}) | escape }}.
     <span class="ml-4">
         <a href="javascript:;" data-request="onLogout" data-request-data="redirect: '/'">

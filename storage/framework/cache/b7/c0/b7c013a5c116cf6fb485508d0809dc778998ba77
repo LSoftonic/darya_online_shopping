@@ -1,4 +1,4 @@
-1592976071a:1:{s:9:"main.yaml";a:7:{s:8:"fileName";s:9:"main.yaml";s:7:"content";s:1051:"name: Main
+1593542009a:1:{s:9:"main.yaml";a:7:{s:8:"fileName";s:9:"main.yaml";s:7:"content";s:1127:"name: Main
 items:
     -
         title: Homepage
@@ -41,11 +41,15 @@ items:
             isExternal: '0'
     -
         title: Mountainbikes
+        nesting: ''
         type: mall-category
+        url: ''
         code: ''
         reference: '2'
+        cmsPage: ''
+        replace: ''
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
-";s:5:"mtime";i:1592851073;s:6:"markup";N;s:4:"code";N;s:4:"name";N;s:5:"items";a:0:{}}}
+";s:5:"mtime";i:1593194258;s:6:"markup";N;s:4:"code";N;s:4:"name";N;s:5:"items";a:0:{}}}

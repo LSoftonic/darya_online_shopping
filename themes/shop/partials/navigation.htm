@@ -1,0 +1,37 @@
+[viewBag]
+
+
+[staticMenu]
+code = "topmenu"
+==
+<ul class="navbar-nav">
+  {% for item in staticMenu.menuItems %}
+   {% if item.url == '#' %}
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"> <i class="fa fa-bars text-muted mr-2"></i>{{item.title}} </a>
+      <div class="dropdown-menu">
+      {% for it in item.items%}
+      <a class="dropdown-item" href="{{item.url}}">{{it.title}}</a>
+      {% endfor %}
+    </div>
+  </li>
+  {% else %}
+  <li class="nav-item">
+    <a class="nav-link" href="{{item.url}}">{{item.title}}</a>
+ </li>
+ {% endif%}
+  {% endfor %}
+    <li class="nav-item">
+     <a class="nav-link" href="#">Ready to ship</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Trade shows</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Services</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Sell with us</a>
+  </li>
+
+</ul>

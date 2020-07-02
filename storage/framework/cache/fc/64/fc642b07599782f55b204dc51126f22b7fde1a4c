@@ -1,0 +1,12 @@
+1593196003a:1:{s:14:"side_menu.yaml";a:7:{s:8:"fileName";s:14:"side_menu.yaml";s:7:"content";s:229:"items:
+    -
+        title: 'All categories'
+        type: all-mall-categories
+        code: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: side_menu
+";s:5:"mtime";i:1593193542;s:6:"markup";N;s:4:"code";N;s:4:"name";N;s:5:"items";a:0:{}}}

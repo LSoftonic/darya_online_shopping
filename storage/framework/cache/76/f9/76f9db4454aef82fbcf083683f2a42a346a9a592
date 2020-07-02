@@ -1,0 +1,33 @@
+1593605043a:1:{s:14:"home/brand.htm";a:6:{s:8:"fileName";s:14:"home/brand.htm";s:7:"content";s:550:"[viewBag]
+==
+use Offline\Mall\Models\Brand;
+function onStart(){
+$this['brands']=Brand::all();
+}
+==
+<section  class="padding-bottom">
+    
+    <header class="section-heading heading-line">
+        <h4 class="title-section text-uppercase">Choose brand</h4>
+    </header>
+    
+    <ul class="row mt-4">
+        {% for brand in brands %}
+        <li class="col-md col-6"><a href="#" class="icontext"> <img class="icon-flag-sm" src="{{brand.logo.path}}"> <span>{{brand.name}}</span> </a></li>
+       {% endfor %}
+    </ul>
+    </section>";s:5:"mtime";i:1593604437;s:6:"markup";s:444:"<section  class="padding-bottom">
+    
+    <header class="section-heading heading-line">
+        <h4 class="title-section text-uppercase">Choose brand</h4>
+    </header>
+    
+    <ul class="row mt-4">
+        {% for brand in brands %}
+        <li class="col-md col-6"><a href="#" class="icontext"> <img class="icon-flag-sm" src="{{brand.logo.path}}"> <span>{{brand.name}}</span> </a></li>
+       {% endfor %}
+    </ul>
+    </section>";s:4:"code";s:85:"use Offline\Mall\Models\Brand;
+function onStart(){
+$this['brands']=Brand::all();
+}";s:7:"viewBag";a:0:{}}}

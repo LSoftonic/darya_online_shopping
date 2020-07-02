@@ -1,4 +1,4 @@
-1592976066a:1:{s:12:"category.htm";a:12:{s:8:"fileName";s:12:"category.htm";s:7:"content";s:620:"title = "Category"
+1593542007a:1:{s:12:"category.htm";a:12:{s:8:"fileName";s:12:"category.htm";s:7:"content";s:620:"title = "Category"
 url = "/category/:slug*"
 layout = "default"
 is_hidden = 0

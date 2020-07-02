@@ -1,0 +1,50 @@
+1593604943a:1:{s:17:"home/recItems.htm";a:6:{s:8:"fileName";s:17:"home/recItems.htm";s:7:"content";s:972:"[viewBag]
+==
+use Offline\Mall\Models\Category;
+function onStart(){
+$this['recom']=Category::where("code","recommended_items")->first();
+}
+==
+
+<section  class="padding-bottom-sm">
+    
+    <header class="section-heading heading-line">
+        <h4 class="title-section text-uppercase">{{recom.name}}</h4>
+    </header>
+    
+    <div class="row row-sm">
+        {% for product in recom.products %}
+        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div href="#" class="card card-sm card-product-grid">
+                <a href="#" class="img-wrap"> <img src="{{product.image.path}}"> </a>
+                <figcaption class="info-wrap">
+                    <a href="#" class="title">{{product.name}}</a>
+                    <div class="price mt-1">{{product.price.AFN}}</div> <!-- price-wrap.// -->
+                </figcaption>
+            </div>
+        </div> <!-- col.// -->
+{% endfor %}
+    </div> <!-- row.// -->
+    </section>";s:5:"mtime";i:1593596464;s:6:"markup";s:822:"<section  class="padding-bottom-sm">
+    
+    <header class="section-heading heading-line">
+        <h4 class="title-section text-uppercase">{{recom.name}}</h4>
+    </header>
+    
+    <div class="row row-sm">
+        {% for product in recom.products %}
+        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div href="#" class="card card-sm card-product-grid">
+                <a href="#" class="img-wrap"> <img src="{{product.image.path}}"> </a>
+                <figcaption class="info-wrap">
+                    <a href="#" class="title">{{product.name}}</a>
+                    <div class="price mt-1">{{product.price.AFN}}</div> <!-- price-wrap.// -->
+                </figcaption>
+            </div>
+        </div> <!-- col.// -->
+{% endfor %}
+    </div> <!-- row.// -->
+    </section>";s:4:"code";s:127:"use Offline\Mall\Models\Category;
+function onStart(){
+$this['recom']=Category::where("code","recommended_items")->first();
+}";s:7:"viewBag";a:0:{}}}

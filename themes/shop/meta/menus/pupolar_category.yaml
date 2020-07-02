@@ -1,0 +1,12 @@
+items:
+    -
+        title: 'Popular Categories'
+        type: mall-category
+        code: ''
+        reference: '7'
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: pupolar_category

@@ -1,0 +1,67 @@
+1593604944a:1:{s:14:"navigation.htm";a:7:{s:8:"fileName";s:14:"navigation.htm";s:7:"content";s:985:"[viewBag]
+
+
+[staticMenu]
+code = "topmenu"
+==
+<ul class="navbar-nav">
+  {% for item in staticMenu.menuItems %}
+   {% if item.url == '#' %}
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"> <i class="fa fa-bars text-muted mr-2"></i>{{item.title}} </a>
+      <div class="dropdown-menu">
+      {% for it in item.items%}
+      <a class="dropdown-item" href="{{item.url}}">{{it.title}}</a>
+      {% endfor %}
+    </div>
+  </li>
+  {% else %}
+  <li class="nav-item">
+    <a class="nav-link" href="{{item.url}}">{{item.title}}</a>
+ </li>
+ {% endif%}
+  {% endfor %}
+    <li class="nav-item">
+     <a class="nav-link" href="#">Ready to ship</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Trade shows</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Services</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Sell with us</a>
+  </li>
+
+</ul>";s:5:"mtime";i:1593416115;s:6:"markup";s:934:"<ul class="navbar-nav">
+  {% for item in staticMenu.menuItems %}
+   {% if item.url == '#' %}
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"> <i class="fa fa-bars text-muted mr-2"></i>{{item.title}} </a>
+      <div class="dropdown-menu">
+      {% for it in item.items%}
+      <a class="dropdown-item" href="{{item.url}}">{{it.title}}</a>
+      {% endfor %}
+    </div>
+  </li>
+  {% else %}
+  <li class="nav-item">
+    <a class="nav-link" href="{{item.url}}">{{item.title}}</a>
+ </li>
+ {% endif%}
+  {% endfor %}
+    <li class="nav-item">
+     <a class="nav-link" href="#">Ready to ship</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Trade shows</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Services</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#">Sell with us</a>
+  </li>
+
+</ul>";s:4:"code";N;s:7:"viewBag";a:0:{}s:10:"staticMenu";a:1:{s:4:"code";s:7:"topmenu";}}}

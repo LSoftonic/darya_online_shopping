@@ -1,0 +1,26 @@
+items:
+    -
+        title: Categories
+        nesting: ''
+        type: all-mall-categories
+        url: ''
+        code: ''
+        reference: ''
+        cmsPage: ''
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: about-us
+        nesting: '0'
+        type: static-page
+        code: ''
+        reference: about-us
+        replace: '0'
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: TopMenu

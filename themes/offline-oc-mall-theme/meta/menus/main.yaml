@@ -41,9 +41,13 @@ items:
             isExternal: '0'
     -
         title: Mountainbikes
+        nesting: ''
         type: mall-category
+        url: ''
         code: ''
         reference: '2'
+        cmsPage: ''
+        replace: ''
         viewBag:
             isHidden: '0'
             cssClass: ''

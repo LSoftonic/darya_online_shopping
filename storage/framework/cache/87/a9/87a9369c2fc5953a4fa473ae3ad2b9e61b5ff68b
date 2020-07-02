@@ -1,0 +1,9 @@
+1593192490a:1:{s:9:"hello.htm";a:10:{s:8:"fileName";s:9:"hello.htm";s:7:"content";s:136:"title = "hello"
+url = "/hello"
+layout = "default"
+is_hidden = 0
+
+[staticMenu]
+code = "side_menu"
+==
+{% component 'staticMenu' %}";s:5:"mtime";i:1593191887;s:6:"markup";s:28:"{% component 'staticMenu' %}";s:4:"code";N;s:5:"title";s:5:"hello";s:3:"url";s:6:"/hello";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:10:"staticMenu";a:1:{s:4:"code";s:9:"side_menu";}}}

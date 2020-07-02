@@ -1,0 +1,22 @@
+1593604943a:1:{s:25:"accountButton/default.htm";a:6:{s:8:"fileName";s:25:"accountButton/default.htm";s:7:"content";s:367:"[myAccount]
+==
+<div class="widget-header mr-3">
+    <a href="{{ myAccount.accountPage | page }}" class="widget-view">
+        <div class="icon-area">
+            <i class="fa fa-user"></i>
+            <span class="notify">3</span>
+        </div>
+        <small class="text"> {{ 'offline.mall::frontend.account' | trans }}
+        </small>
+    </a>
+</div>
+";s:5:"mtime";i:1593189809;s:6:"markup";s:348:"<div class="widget-header mr-3">
+    <a href="{{ myAccount.accountPage | page }}" class="widget-view">
+        <div class="icon-area">
+            <i class="fa fa-user"></i>
+            <span class="notify">3</span>
+        </div>
+        <small class="text"> {{ 'offline.mall::frontend.account' | trans }}
+        </small>
+    </a>
+</div>";s:4:"code";N;s:9:"myAccount";a:0:{}}}

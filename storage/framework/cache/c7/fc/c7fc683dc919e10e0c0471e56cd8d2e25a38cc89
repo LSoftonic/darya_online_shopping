@@ -1,0 +1,5 @@
+1593514776a:1:{s:26:"resetpassword/complete.htm";a:5:{s:8:"fileName";s:26:"resetpassword/complete.htm";s:7:"content";s:75:"<p>
+    {{ 'offline.mall::frontend.password_reset.complete' | trans }}
+</p>";s:5:"mtime";i:1592851074;s:6:"markup";s:75:"<p>
+    {{ 'offline.mall::frontend.password_reset.complete' | trans }}
+</p>";s:4:"code";N;}}

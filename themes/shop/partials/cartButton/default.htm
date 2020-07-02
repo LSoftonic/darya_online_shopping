@@ -1,0 +1,25 @@
+[cart]
+==
+{% set count = cart.cart.products.count %}
+<div class="widget-header mr-3">
+    <a  href="{{ 'cart' | page }}" class="widget-view">
+        <div class="icon-area">
+            <i class="fa fa-store"></i>
+            <span class="notify">  {{ count }}</span>
+        </div>
+        <small class="text">{{ 'offline.mall::frontend.cart' | trans }}</small>
+    </a>
+</div>
+{% put scripts %}
+    <script>
+        $(function () {
+            var $count = $('.mall-cart-count');
+            $.subscribe('mall.cart.productAdded', function (e, data) {
+                $count.removeClass('invisible').text(data.new_items_count).show();
+            });
+            $.subscribe('mall.cart.productRemoved', function (e, data) {
+                $count.text(data.new_items_count);
+            });
+        });
+    </script>
+{% endput %}

@@ -1,0 +1,28 @@
+[viewBag]
+==
+use Offline\Mall\Models\Category;
+function onStart(){
+$this['recom']=Category::where("code","recommended_items")->first();
+}
+==
+
+<section  class="padding-bottom-sm">
+    
+    <header class="section-heading heading-line">
+        <h4 class="title-section text-uppercase">{{recom.name}}</h4>
+    </header>
+    
+    <div class="row row-sm">
+        {% for product in recom.products %}
+        <div class="col-xl-2 col-lg-3 col-md-4 col-6">
+            <div href="#" class="card card-sm card-product-grid">
+                <a href="#" class="img-wrap"> <img src="{{product.image.path}}"> </a>
+                <figcaption class="info-wrap">
+                    <a href="#" class="title">{{product.name}}</a>
+                    <div class="price mt-1">{{product.price.AFN}}</div> <!-- price-wrap.// -->
+                </figcaption>
+            </div>
+        </div> <!-- col.// -->
+{% endfor %}
+    </div> <!-- row.// -->
+    </section>

@@ -1,0 +1,47 @@
+1593604943a:1:{s:22:"cartButton/default.htm";a:6:{s:8:"fileName";s:22:"cartButton/default.htm";s:7:"content";s:854:"[cart]
+==
+{% set count = cart.cart.products.count %}
+<div class="widget-header mr-3">
+    <a  href="{{ 'cart' | page }}" class="widget-view">
+        <div class="icon-area">
+            <i class="fa fa-store"></i>
+            <span class="notify">  {{ count }}</span>
+        </div>
+        <small class="text">{{ 'offline.mall::frontend.cart' | trans }}</small>
+    </a>
+</div>
+{% put scripts %}
+    <script>
+        $(function () {
+            var $count = $('.mall-cart-count');
+            $.subscribe('mall.cart.productAdded', function (e, data) {
+                $count.removeClass('invisible').text(data.new_items_count).show();
+            });
+            $.subscribe('mall.cart.productRemoved', function (e, data) {
+                $count.text(data.new_items_count);
+            });
+        });
+    </script>
+{% endput %}";s:5:"mtime";i:1593190856;s:6:"markup";s:842:"{% set count = cart.cart.products.count %}
+<div class="widget-header mr-3">
+    <a  href="{{ 'cart' | page }}" class="widget-view">
+        <div class="icon-area">
+            <i class="fa fa-store"></i>
+            <span class="notify">  {{ count }}</span>
+        </div>
+        <small class="text">{{ 'offline.mall::frontend.cart' | trans }}</small>
+    </a>
+</div>
+{% put scripts %}
+    <script>
+        $(function () {
+            var $count = $('.mall-cart-count');
+            $.subscribe('mall.cart.productAdded', function (e, data) {
+                $count.removeClass('invisible').text(data.new_items_count).show();
+            });
+            $.subscribe('mall.cart.productRemoved', function (e, data) {
+                $count.text(data.new_items_count);
+            });
+        });
+    </script>
+{% endput %}";s:4:"code";N;s:4:"cart";a:0:{}}}
